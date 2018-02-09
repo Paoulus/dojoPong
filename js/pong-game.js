@@ -45,18 +45,14 @@ var paddleName = 'paddle';
 /**
  * variabili che contengono le informazioni sugli assets sonori
  */
-var ballBounceURL  = 'assets/ballBounce';
+var ballBounceURL  = 'assets/ballBounce.ogg';
 var ballBounceName = 'ballBounce';
     
-var ballHitURL  = 'assets/ballHit';
+var ballHitURL  = 'assets/ballHit.ogg';
 var ballHitName ='ballHit';
     
-var ballMissedURL  = 'assets/ballMissed';
+var ballMissedURL  = 'assets/ballMissed.ogg';
 var ballMissedName = 'ballMissed';
-
-//queste due variabili servono per sapere la codifica dei file audio    
-var mp4URL = '.m4a';
-var oggURL = '.ogg';
 
 /**
  * per la gestione degli fonts
@@ -96,9 +92,9 @@ function preload() {
 	game.load.image(ballName, ballURL);
 	game.load.image(paddleName, paddleURL);
 
-	game.load.audio(ballBounceName, [ballBounceURL+mp4URL, ballBounceURL+oggURL]);
-	game.load.audio(ballHitName, [ballHitURL+mp4URL, ballHitURL+oggURL]);
-	game.load.audio(ballMissedName, [ballMissedURL+mp4URL, ballMissedURL+oggURL]);
+	game.load.audio(ballBounceName, ballBounceURL);
+	game.load.audio(ballHitName, ballHitURL);
+	game.load.audio(ballMissedName, ballMissedURL);
 }
 
 
