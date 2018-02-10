@@ -369,11 +369,14 @@ function render() {
 
 }
 
-//questa serve se quando si spiega overlap della phisica
+//questa serve se si spiega overlap della phisica
 function collideWithPaddle(ball, paddle) {
 	//stesso codice dell'if col for
 }
 
+// NOTA: spiegare eventi come "se succede x fai y"
+//       dove "se succede x" := metodo di phaser
+//       "fai y" := funzione definita da noi 
 function handleEventBallOutOfBounds() {
 	sndBallMissed.play();
     
