@@ -10,7 +10,7 @@ var screenHeight = 640;
 
 var dashSize = 10;
 
-var paddleLeftX			= 100;
+var paddleLeftX			= 50;
 var paddleRightX 		= screenWidth - paddleLeftX; // o semplicemente 1180
 var paddleVelocity 		= 500;
 var paddleSegmentsMax 	= 8;
