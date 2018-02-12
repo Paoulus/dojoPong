@@ -189,8 +189,9 @@ function create() {
     lblScoreRight 	  = game.add.text(scoreRightX,scoreTopY, "0", fontStyle);
     lblScoreRight.anchor.set(0.5, 0);
 
-    lblWinner 		  = game.add.text(screenWidth * 0.25,screenHeight * 0.25, winTxt, fontStyle);
-    lblWinner.anchor.set(0.5, 0.5);
+    lblWinner   = game.add.text( 0, 0, winTxt, fontStyle);
+    lblWinner.x = screenWidth/2 - lblWinner.width;
+    lblWinner.y = screenHeight/2 - lblWinner.height;
 
     /***********************
      * creazione della fisica
